@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\Paginas\\Paginas.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\CreateCodeLivros\\CreateCodeLivros.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\CreateCodeLivros\\CreateCodeLivros.csproj",
+        "projectName": "CreateCodeLivros",
+        "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\CreateCodeLivros\\CreateCodeLivros.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\DeleteDataFirst\\DeleteDataFirst.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\DeleteDataFirst\\DeleteDataFirst.csproj",
+        "projectName": "DeleteDataFirst",
+        "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\DeleteDataFirst\\DeleteDataFirst.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\Paginas\\Paginas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\Paginas\\Paginas.csproj",
+        "projectName": "Paginas",
+        "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\Paginas\\Paginas.csproj",
+        "packagesPath": "C:\\Users\\017552631\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\Paginas\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\017552631\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\CreateCodeLivros\\CreateCodeLivros.csproj": {
+                "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\CreateCodeLivros\\CreateCodeLivros.csproj"
+              },
+              "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\DeleteDataFirst\\DeleteDataFirst.csproj": {
+                "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\DeleteDataFirst\\DeleteDataFirst.csproj"
+              },
+              "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\UpdadeModelFirst\\UpdadeModelFirst.csproj": {
+                "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\UpdadeModelFirst\\UpdadeModelFirst.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\UpdadeModelFirst\\UpdadeModelFirst.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\UpdadeModelFirst\\UpdadeModelFirst.csproj",
+        "projectName": "UpdadeModelFirst",
+        "projectPath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\UpdadeModelFirst\\UpdadeModelFirst.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="EmitMSBuildWarning" BeforeTargets="Build">
+    <Warning Text="Os pacotes contendo arquivos de destino e de propriedades MSBuild não podem ser completamente instalados em projetos direcionados a estruturas múltiplas. Os arquivos de destino e de propriedades MSBuild foram ignorados." />
+  </Target>
+</Project>

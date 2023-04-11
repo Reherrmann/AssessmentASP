@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Model1.Book" />
+    <EntitySet Name="Authors" EntityType="Model1.Author" />
+    <AssociationSet Name="BookAuthor" Association="Model1.BookAuthor">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="Author" EntitySet="Authors" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="BookId" />
+    </Key>
+    <Property Name="BookId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Isbn" Type="String" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <NavigationProperty Name="Authors" Relationship="Model1.BookAuthor" FromRole="Book" ToRole="Author" />
+  </EntityType>
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="AuthorId" />
+    </Key>
+    <Property Name="AuthorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FistName" Type="String" Nullable="false" />
+    <Property Name="LastName" Type="String" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Model1.BookAuthor" FromRole="Author" ToRole="Book" />
+  </EntityType>
+  <Association Name="BookAuthor">
+    <End Type="Model1.Book" Role="Book" Multiplicity="*" />
+    <End Type="Model1.Author" Role="Author" Multiplicity="*" />
+  </Association>
+</Schema>

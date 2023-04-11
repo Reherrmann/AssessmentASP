@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Assessment.DATA.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Livros</h1>
+
+<p >
+    <a class="btn btn-primary" asp-action="Create">Novo Livro</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Isbn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                
+            <td>
+                @Html.DisplayFor(modelItem => item.Isbn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td class="rowcol-md">
+                <a asp-action="Edit" class="btn btn-warning m-1" asp-route-id="@item.BookId">Editar</a>
+                    <a asp-action="Details" class="btn btn-primary m-1" asp-route-id="@item.BookId">Detlhes</a>
+                    <a asp-action="Delete" class="btn btn-danger m-1" asp-route-id="@item.BookId">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+                @section Scripts {
+
+    <script>
+        let table = new DataTable('#myTable');
+    </script>
+                }

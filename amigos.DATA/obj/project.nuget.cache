@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8xkwOlEqZRD33Srx59MLvSKipHCEz2R/bpTQDQ257h0/EpWdAmIg1jMaDaGsJMtgTMCz8YGGF0H4ljeevjXUlg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\017552631\\source\\repos\\AssessmentASPDATA\\amigos.DATA\\amigos.DATA.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Não é possível ler as informações do projeto para 'amigos.DATA': '77.0.446.0.14' não é uma cadeia de caracteres de versão válida."
+    }
+  ]
+}

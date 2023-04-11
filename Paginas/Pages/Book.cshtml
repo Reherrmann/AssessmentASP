@@ -1,0 +1,32 @@
+﻿@page
+@model Paginas.Pages.BookModel
+@{
+}
+
+<br />
+<h2>Lista de livros</h2>
+
+<a class="btn btn-primary btn-sm" href="/Book/Book">Novo Livro</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Isbn</th>
+            <th>Título</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model.listBooks)
+        {
+            <tr>
+                <td>@book.BookId</td>
+                <td>@book.Isbn</td>
+                <td>@book.Title</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Book/Edit?id=@book.BookId">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/Book/Delet?id=@book.BookId">Apagar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
